@@ -78,7 +78,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <motion.div
           className="fixed bottom-0 right-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl"
           initial="hidden"
-          whileInView="visible"
+          animate={isMenuToggled ? "visible" : "hidden"}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
@@ -87,11 +87,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           }}
         >
           {/* CLOSE ICON */}
-          <motion.div className="flex justify-end p-12">
+          <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-6 w-6 text-gray-400" />
             </button>
-          </motion.div>
+          </div>
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
