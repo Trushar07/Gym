@@ -1,7 +1,7 @@
 # Gym Web Application
 This web application is designed for a gym facility and offers a user-friendly interface to access information about the gym's services, classes, benefits, and contact details. The application provides a seamless experience for individuals interested in joining the gym or exploring its offerings. Below, you will find a brief overview of the different pages available within the application:
 
-* ![Live web application can be accesss from here.](https://trushar07.github.io/Gym/)
+Live web application can be accesss from here.(https://trushar07.github.io/Gym/)
 
 ## Pages
 ### Home
